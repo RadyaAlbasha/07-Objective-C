@@ -21,7 +21,7 @@
 }
 -(void) deleteFriend: (int) friendId{
     int i=0;
-    int size = [allFriends count];
+    NSUInteger size =[allFriends count];
     while (i<size && (friendId != [allFriends[i] friendId])) {
             i++;
     }
@@ -40,7 +40,7 @@
 }
 
 -(void)printAllFriends{
-    int size = [allFriends count];
+    NSUInteger size = [allFriends count];
     for(int i=0 ;i<size ;i++)
     {
         [allFriends[i] printFriend];
